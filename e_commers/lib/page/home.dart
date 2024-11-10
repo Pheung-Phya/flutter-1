@@ -297,7 +297,7 @@ class _HomeState extends State<Home> {
 // ignore: must_be_immutable
 class CategoriesTile extends StatelessWidget {
   String image;
-  CategoriesTile({required this.image});
+  CategoriesTile({super.key, required this.image});
 
   @override
   Widget build(BuildContext context) {

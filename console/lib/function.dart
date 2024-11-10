@@ -1,4 +1,5 @@
 void main(List<String> args) {
+  fetchData();
   Map<String, dynamic> map = {
     'id': 10,
     'name': 'Taka',
@@ -12,6 +13,14 @@ void main(List<String> args) {
   list.add(map);
 
   for (var item in list) {
-    item.forEach((key, value)=>print('$key : $value'),);
+    item.forEach(
+      (key, value) => print('$key : $value'),
+    );
   }
+}
+
+Future<void> fetchData() async {
+  print('Fetching data...');
+  await Future.delayed(Duration(seconds: 2)); // Simulate a delay
+  print('Data fetched');
 }

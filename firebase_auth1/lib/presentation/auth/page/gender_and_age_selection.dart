@@ -12,7 +12,7 @@ class GenderAndAgeSelection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: BasicAppBar(),
+      appBar: const BasicAppBar(),
       body: MultiBlocProvider(
           providers: [
             BlocProvider(create: (context) => GenderSelectionCubit()),
@@ -42,7 +42,7 @@ class GenderAndAgeSelection extends StatelessWidget {
                   ],
                 ),
               ),
-              Spacer(),
+              const Spacer(),
               _finishButton(),
             ],
           )),

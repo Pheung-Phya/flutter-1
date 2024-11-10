@@ -52,7 +52,7 @@ class SinginPage extends StatelessWidget {
   Widget _continueButton(BuildContext context) {
     return BasicAppButton(
         onPressed: () {
-          AppNavigator.push(context, PasswordPage());
+          AppNavigator.push(context, const PasswordPage());
         },
         Title: 'Continue');
   }
@@ -64,7 +64,7 @@ class SinginPage extends StatelessWidget {
       TextSpan(
           recognizer: TapGestureRecognizer()
             ..onTap = () {
-              AppNavigator.push(context, CreateAccountPage());
+              AppNavigator.push(context, const CreateAccountPage());
             },
           text: 'Create One',
           style: const TextStyle(fontWeight: FontWeight.bold))

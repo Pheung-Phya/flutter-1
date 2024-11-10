@@ -1,6 +1,4 @@
 import 'package:firebase_auth1/core/config/theme/theme_colors.dart';
-import 'package:firebase_auth1/presentation/auth/page/gender_and_age_selection.dart';
-
 import 'package:firebase_auth1/presentation/splash/bloc/splash_cubit.dart';
 import 'package:firebase_auth1/presentation/splash/page/splash.dart';
 import 'package:flutter/material.dart';

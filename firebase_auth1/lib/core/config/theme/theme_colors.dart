@@ -20,7 +20,7 @@ class AppTheme {
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
-        backgroundColor: MaterialStateProperty.all(Colors.blue),
+        backgroundColor: WidgetStateProperty.all(Colors.blue),
       ),
     ),
   );

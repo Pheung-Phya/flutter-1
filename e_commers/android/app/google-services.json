@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "614357313060",
+    "project_id": "e-commers1-6e889",
+    "storage_bucket": "e-commers1-6e889.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614357313060:android:d9f381832e895e2f4a5ab1",
+        "android_client_info": {
+          "package_name": "com.example.e_commers"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMs00ol7xB3e0o7YtRYrpphWN1td0f0Xo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

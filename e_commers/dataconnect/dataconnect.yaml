@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "e_commers"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "e_commers-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
