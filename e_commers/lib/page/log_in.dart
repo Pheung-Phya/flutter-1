@@ -1,7 +1,5 @@
 import 'package:e_commers/widget/widget_support.dart';
 import 'package:flutter/material.dart';
-import 'dart:math'; // To use pi for rotation calculations
-
 class LogIn extends StatefulWidget {
   const LogIn({super.key});
 
@@ -40,61 +38,61 @@ class _LogInState extends State<LogIn> with SingleTickerProviderStateMixin {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                  height: 300,
-                  width: MediaQuery.of(context).size.width,
-                  decoration: const BoxDecoration(
-                    color: Colors.amber,
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(1000),
-                        bottomRight: Radius.circular(1000)),
-                  ),
-                  child: Stack(
-                    children: [
-                      AnimatedBuilder(
-                        animation: _controller,
-                        builder: (context, child) {
-                          return Transform.rotate(
-                            angle: _controller.value *
-                                2 *
-                                pi, // 360 degrees rotation
-                            child: ClipRRect(
-                              borderRadius: const BorderRadius.only(
-                                  topLeft: Radius.circular(1000),
-                                  bottomRight: Radius.circular(1000)),
-                              child: Image.asset(
-                                'images/phya.jpg',
-                                fit: BoxFit.cover,
-                                height: 300,
-                                width: MediaQuery.of(context).size.width,
-                              ),
-                            ),
-                          );
-                        },
-                      ),
-                      AnimatedBuilder(
-                        animation: _controller,
-                        builder: (context, child) {
-                          return Transform.rotate(
-                            angle: -_controller.value *
-                                2 *
-                                pi, // 360 degrees rotation
-                            child: ClipRRect(
-                              borderRadius: const BorderRadius.only(
-                                  topRight: Radius.circular(1000),
-                                  bottomLeft: Radius.circular(1000)),
-                              child: Image.asset(
-                                'images/phya.jpg',
-                                fit: BoxFit.cover,
-                                height: 300,
-                                width: MediaQuery.of(context).size.width,
-                              ),
-                            ),
-                          );
-                        },
-                      )
-                    ],
-                  )),
+              // Container(
+              //     height: 300,
+              //     width: MediaQuery.of(context).size.width,
+              //     decoration: const BoxDecoration(
+              //       color: Colors.amber,
+              //       borderRadius: BorderRadius.only(
+              //           topLeft: Radius.circular(1000),
+              //           bottomRight: Radius.circular(1000)),
+              //     ),
+              //     child: Stack(
+              //       children: [
+              //         AnimatedBuilder(
+              //           animation: _controller,
+              //           builder: (context, child) {
+              //             return Transform.rotate(
+              //               angle: _controller.value *
+              //                   2 *
+              //                   pi, // 360 degrees rotation
+              //               child: ClipRRect(
+              //                 borderRadius: const BorderRadius.only(
+              //                     topLeft: Radius.circular(1000),
+              //                     bottomRight: Radius.circular(1000)),
+              //                 child: Image.asset(
+              //                   'images/phya.jpg',
+              //                   fit: BoxFit.cover,
+              //                   height: 300,
+              //                   width: MediaQuery.of(context).size.width,
+              //                 ),
+              //               ),
+              //             );
+              //           },
+              //         ),
+              //         AnimatedBuilder(
+              //           animation: _controller,
+              //           builder: (context, child) {
+              //             return Transform.rotate(
+              //               angle: -_controller.value *
+              //                   2 *
+              //                   pi, // 360 degrees rotation
+              //               child: ClipRRect(
+              //                 borderRadius: const BorderRadius.only(
+              //                     topRight: Radius.circular(1000),
+              //                     bottomLeft: Radius.circular(1000)),
+              //                 child: Image.asset(
+              //                   'images/phya.jpg',
+              //                   fit: BoxFit.cover,
+              //                   height: 300,
+              //                   width: MediaQuery.of(context).size.width,
+              //                 ),
+              //               ),
+              //             );
+              //           },
+              //         )
+              //       ],
+              //     )),
               SizedBox(
                 height: 20,
               ),
